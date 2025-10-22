@@ -1,3 +1,0 @@
-# chess-game-pixijs
-
-#Test

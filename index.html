@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PixiJS v7.4.0 - Sankar Shan</title>
+    <!-- Lock to PixiJS version 7.4.0 -->
+    <script src="https://pixijs.download/v7.4.0/pixi.min.js"></script>
+  </head>
+  <body style="margin:0; padding:0; overflow:hidden;">
+    <script>
+      // ✅ Works perfectly in PixiJS v7
+      const app = new PIXI.Application({
+        width: 800,
+        height: 600,
+        backgroundColor: 0xAAAAAA
+      });
+
+      // Append canvas to page
+      document.body.appendChild(app.view);
+
+      // Draw a red circle
+      const circle = new PIXI.Graphics();
+      circle.beginFill(0xff0000);
+      circle.drawCircle(400, 300, 50);
+      circle.endFill();
+      app.stage.addChild(circle);
+    </script>
+  </body>
+</html>
